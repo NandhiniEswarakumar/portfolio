@@ -1106,8 +1106,211 @@ section.animate-in {
 .about-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* ===================================
+     MOBILE ALIGNMENT FIXES (About)
+     =================================== */
+  @media (max-width: 480px) {
+    .about .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .education-section h3,
+    .internship-section h3 {
+      font-size: 1.1rem;
+      gap: 0.6rem;
+    }
+
+    .education-card,
+    .internship-card {
+      padding: 1.2rem;
+      border-radius: 10px;
+    }
+
+    .education-card h4,
+    .internship-card h4 {
+      font-size: 1.05rem;
+    }
+
+    .education-card .degree {
+      white-space: normal;
+      word-break: break-word;
+    }
+
+    .education-card .year,
+    .education-card .cgpa {
+      font-size: 0.95rem;
+    }
+  }
   gap: 2rem;
   margin-top: 3rem;
+}
+
+/* ===================================
+   GLOBAL MOBILE COMPACT STYLES
+   =================================== */
+@media (max-width: 480px) {
+  html, body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 1.2rem;
+  }
+
+  .section-title {
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Hero compact */
+  .hero {
+    padding: 2.5rem 0 3rem 0;
+  }
+  .hero-text h1,
+  .glitch {
+    font-size: 1.6rem;
+  }
+  .typewriter {
+    font-size: 0.95rem;
+  }
+  .hero-description {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+  }
+  .hero-badge {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
+  }
+  .hero-buttons {
+    gap: 0.6rem;
+    margin-top: 1rem;
+  }
+  .btn {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
+  }
+  .social-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+
+  /* Cube smaller */
+  .hero-3d {
+    justify-content: center;
+  }
+  .cube {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* Skills compact */
+  .skills-grid {
+    gap: 0.8rem;
+  }
+  .skill-progress {
+    height: 8px;
+  }
+
+  /* Projects compact */
+  .projects-grid {
+    gap: 0.9rem;
+  }
+  .project-card {
+    padding: 0.9rem;
+  }
+  .project-screenshot {
+    height: 150px;
+  }
+
+  /* Stats compact */
+  .about-stats {
+    gap: 0.8rem;
+  }
+}
+
+/* ===================================
+   EXTRA COMPACT (≤360px)
+   =================================== */
+@media (max-width: 360px) {
+  html, body {
+    font-size: 13px;
+  }
+  .container {
+    padding: 1rem;
+  }
+  .section-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.9rem;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 2rem 0 2.5rem 0;
+  }
+  .hero-text h1,
+  .glitch {
+    font-size: 1.4rem;
+  }
+  .typewriter,
+  .hero-description {
+    font-size: 0.9rem;
+  }
+  .hero-badge {
+    padding: 0.35rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  .hero-buttons {
+    gap: 0.5rem;
+    margin-top: 0.9rem;
+  }
+  .btn {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.85rem;
+  }
+  .social-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+  }
+  .cube {
+    width: 120px;
+    height: 120px;
+  }
+  .hero-bubbles { transform: scale(0.9); }
+
+  /* About */
+  .education-section h3,
+  .internship-section h3 {
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+  .education-card,
+  .internship-card {
+    padding: 1rem;
+  }
+  .education-card h4,
+  .internship-card h4 {
+    font-size: 1rem;
+  }
+  .education-card .year,
+  .education-card .cgpa {
+    font-size: 0.9rem;
+  }
+  .section-bubbles { transform: scale(0.92); }
+
+  /* Skills */
+  .skills-grid { gap: 0.6rem; }
+  .skill-progress { height: 7px; }
+
+  /* Projects */
+  .projects-grid { gap: 0.75rem; }
+  .project-card { padding: 0.8rem; }
+  .project-screenshot { height: 130px; }
+
+  /* Stats */
+  .about-stats { gap: 0.6rem; }
 }
 
 .stat-card {
@@ -1118,6 +1321,11 @@ section.animate-in {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
 }
 
 .stat-card::before {
@@ -1147,12 +1355,13 @@ section.animate-in {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 0.5rem;
+  margin: 0 0 0.5rem 0;
 }
 
 .stat-card p {
   color: var(--gray-text);
   font-size: 1rem;
+  margin: 0;
 }
 
 /* ===================================
