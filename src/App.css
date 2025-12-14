@@ -1018,6 +1018,10 @@ section.animate-in {
   color: var(--light-text);
   line-height: 1.6;
   margin: 0;
+  text-align: left;
+  text-align: start;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 /* ===================================
