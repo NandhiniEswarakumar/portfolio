@@ -8,15 +8,6 @@ import craftImg from '../screenshots/craft.png';
 const FrontendProjects = () => {
   const projects = [
     {
-      title: 'Blissfulties',
-      description: 'A modern web application built with HTML, CSS, and JavaScript featuring responsive design and smooth animations.',
-      tech: ['HTML', 'CSS', 'JavaScript'],
-      link: 'https://blissfulties.netlify.app/',
-      featured: false,
-      screenshot: blissfulitesImg,
-      outcome: 'Successfully delivered a fully responsive website with enhanced user engagement and smooth navigation'
-    },
-    {
       title: 'Podhidai Thootam',
       description: 'An interactive website showcasing clean code practices and modern web design principles.',
       tech: ['HTML', 'CSS', 'JavaScript'],
