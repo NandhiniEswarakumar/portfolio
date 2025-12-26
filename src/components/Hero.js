@@ -29,7 +29,7 @@ const Hero = () => {
           </div>
           
           <h1 className="glitch" data-text="Nandhini Eswarakumar">Nandhini Eswarakumar</h1>
-          <h2 className="typewriter">Frontend Developer & Digital Marketing Enthusiast</h2>
+          <h2 className="typewriter"> Freelancer, Frontend Developer & Digital Marketing Enthusiast</h2>
           <p className="hero-description">Crafting beautiful web experiences and driving digital growth through strategic marketing</p>
           
           <div className="hero-buttons">

@@ -4,6 +4,7 @@ import podhidaiImg from '../screenshots/resort.png';
 import mmtImg from '../screenshots/mmt.png';
 import textileImg from '../screenshots/textile.png';
 import craftImg from '../screenshots/craft.png';
+import ascoImg from '../screenshots/asco.png';
 
 const FrontendProjects = () => {
   const projects = [
@@ -42,6 +43,15 @@ const FrontendProjects = () => {
       featured: true,
       screenshot: craftImg,
       outcome: 'Built an intuitive platform showcasing handcrafted products with seamless user experience'
+    },
+    {
+      title: 'Centering and Construction Materials',
+      description: 'A comprehensive business website for construction materials, featuring product showcases and one-click call functionality for instant customer connection.',
+      tech: ['React', 'JavaScript', 'CSS'],
+      link: 'https://as-co.vercel.app/',
+      featured: true,
+      screenshot: ascoImg,
+      outcome: 'Developed a professional digital presence with click-to-call feature, improving customer engagement and inquiry conversion'
     }
   ];
 

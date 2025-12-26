@@ -4,10 +4,31 @@ import eeeCert from '../assests/eee.jpg';
 import ramakrishnaCert from '../assests/ramakrishna.jpg';
 import zinniaCert from '../assests/zinnia.jpg';
 import exodiaCert from '../assests/Exodia.jpg';
+import projectCert from '../assests/project.jpg';
+import hackathonCert from '../assests/hackathon.jpg';
+import paperCert from '../assests/paper.jpg';
 
 const Achievements = () => {
   const achievements = [
-        {
+    {
+      icon: 'fas fa-trophy',
+      title: 'Third Prize - Project Presentation',
+      description: 'Won 3rd prize in Project Presentation at 15th National Level Technical Symposium, Nandha Engineering College',
+      certificate: projectCert
+    },
+    {
+      icon: 'fas fa-file-alt',
+      title: 'Paper Presentation',
+      description: 'Participated in Paper Presentation at 15th National Level Technical Symposium, Nandha Engineering College',
+      certificate: paperCert
+    },
+    {
+      icon: 'fas fa-code',
+      title: 'Hackathon Participation',
+      description: 'Participated in Hackathon at 15th National Level Technical Symposium, Nandha Engineering College',
+      certificate: hackathonCert
+    },
+           {
       icon: 'fas fa-trophy',
       title: 'First Prize - Email Spam Classifier',
       description: 'Won 1st prize for Email Spam Classifier paper presentation at EEE, Kongu Engineering College',
