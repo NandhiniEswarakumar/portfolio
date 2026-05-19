@@ -24,18 +24,39 @@ const About = () => {
               <div className="education-card">
                 <h4>Kongu Engineering College</h4>
                 <p className="degree"><i className="fas fa-book"></i> B.Tech INFORMATION TECHNOLOGY</p>
-                <p className="year">3rd Year</p>
-                <p className="cgpa"><i className="fas fa-star"></i> CGPA: 7.94 / 10.0</p>
+                <p className="year">Final Year</p>
+                <p className="cgpa"><i className="fas fa-star"></i> CGPA: 7.92 / 10.0</p>
               </div>
             </div>
 
             {/* Internship Section */}
             <div className="internship-section">
-              <h3><i className="fas fa-briefcase"></i> Current Internship</h3>
+              <h3><i className="fas fa-briefcase"></i>Internship</h3>
               <div className="internship-card">
-                <h4>Digital Marketing Intern</h4>
+                <h4>💼 Digital Marketing Intern</h4>
                 <p className="company"><i className="fas fa-building"></i> NNUTS Company, Chennai</p>
-                <p className="description">Gaining hands-on experience in SEO optimization, social media marketing strategies, and digital advertising campaigns. Working with real-world projects to enhance brand visibility and drive customer engagement.</p>
+                <p className="duration"><i className="fas fa-calendar"></i> Duration: 3 Months</p>
+                
+                <div className="internship-details">
+                  <h5>🔹 Overview</h5>
+                  <p>Worked on real-world digital marketing campaigns focusing on SEO, content planning, and performance analysis to improve brand visibility and engagement.</p>
+                  
+                  <h5>🔹 Key Responsibilities</h5>
+                  <ul>
+                    <li>Created and managed a social media content calendar to ensure consistent posting and audience engagement</li>
+                    <li>Performed SEO optimization including keyword research, on-page improvements, and content alignment</li>
+                    <li>Conducted website crawling and auditing to identify technical SEO issues</li>
+                    <li>Monitored and improved website performance using data-driven insights</li>
+                    <li>Assisted in executing digital marketing campaigns</li>
+                  </ul>
+                  
+                  <h5>🔹 Tools & Technologies Used</h5>
+                  <ul>
+                    <li><strong>SEMrush</strong> – Keyword research, competitor analysis, SEO audits</li>
+                    <li><strong>Google Search Console</strong> – Website performance tracking, indexing, crawl error analysis</li>
+                    <li><strong>Google Analytics</strong> – User behavior analysis, traffic monitoring, performance insights</li>
+                  </ul>
+                </div>
               </div>
             </div>
 

@@ -35,7 +35,7 @@ const Navbar = () => {
           <li><a href="#home" className="nav-link" onClick={closeMenu}>Home</a></li>
           <li><a href="#about" className="nav-link" onClick={closeMenu}>About</a></li>
           <li><a href="#skills" className="nav-link" onClick={closeMenu}>Skills</a></li>
-          <li><a href="#frontend-projects" className="nav-link" onClick={closeMenu}>Frontend</a></li>
+          <li><a href="#frontend-projects" className="nav-link" onClick={closeMenu}>Projects</a></li>
           <li><a href="#marketing-projects" className="nav-link" onClick={closeMenu}>Marketing</a></li>
           <li><a href="#achievements" className="nav-link" onClick={closeMenu}>Achievements</a></li>
           <li><a href="#contact" className="nav-link" onClick={closeMenu}>Contact</a></li>

@@ -1,10 +1,10 @@
 import React from 'react';
-import blissfulitesImg from '../screenshots/event.png';
 import podhidaiImg from '../screenshots/resort.png';
 import mmtImg from '../screenshots/mmt.png';
 import textileImg from '../screenshots/textile.png';
 import craftImg from '../screenshots/craft.png';
 import ascoImg from '../screenshots/asco.png';
+import campusImg from '../screenshots/campus.png';
 
 const FrontendProjects = () => {
   const projects = [
@@ -52,6 +52,15 @@ const FrontendProjects = () => {
       featured: true,
       screenshot: ascoImg,
       outcome: 'Developed a professional digital presence with click-to-call feature, improving customer engagement and inquiry conversion'
+    },
+    {
+      title: 'Campus Portal',
+      description: 'A full-stack campus placement portal with integrated backend and MongoDB Atlas database for managing student placements and company interactions.',
+      tech: ['React', 'Node.js', 'MongoDB Atlas', 'Express'],
+      link: 'https://campus-placement-tau.vercel.app/',
+      featured: true,
+      screenshot: campusImg,
+      outcome: 'Built a comprehensive platform connecting students with placement opportunities using modern full-stack technologies'
     }
   ];
 
@@ -65,13 +74,20 @@ const FrontendProjects = () => {
         <div className="section-bubble bubble-4"></div>
       </div>
       <div className="container">
-        <h2 className="section-title">Frontend Projects</h2>
+        <h2 className="section-title">Projects</h2>
         <p className="section-subtitle">Responsive web applications built with modern technologies</p>
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div className={`project-card ${project.featured ? 'featured' : ''}`} key={index}>
               <div className="project-image">
-                <img src={project.screenshot} alt={project.title} className="project-screenshot" />
+                {project.screenshot ? (
+                  <img src={project.screenshot} alt={project.title} className="project-screenshot" />
+                ) : (
+                  <div className="project-screenshot placeholder">
+                    <i className="fas fa-image"></i>
+                    <p>Project Image</p>
+                  </div>
+                )}
                 <div className="project-overlay">
                   <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
                     <i className="fas fa-external-link-alt"></i>
