@@ -55,14 +55,8 @@ function App() {
         <div className="premium-grid"></div>
         <div className="premium-orb premium-orb-1"></div>
         <div className="premium-orb premium-orb-2"></div>
-        <div className="premium-card premium-card-tech">
-          <i className="fas fa-code"></i>
-          <span>Tech Stack</span>
-        </div>
-        <div className="premium-card premium-card-growth">
-          <i className="fas fa-chart-line"></i>
-          <span>Growth Strategy</span>
-        </div>
+        {/* Removed Tech Stack floating card to avoid distracting text while scrolling */}
+        {/* Removed Growth Strategy floating card to avoid distracting text while scrolling */}
         <div className="premium-ring premium-ring-1"></div>
         <div className="premium-ring premium-ring-2"></div>
       </div>
