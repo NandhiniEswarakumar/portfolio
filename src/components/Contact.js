@@ -54,7 +54,7 @@ const Contact = () => {
               </div>
               <div className="contact-details">
                 <h3>Available For</h3>
-                <p>Frontend Development & Digital Marketing Projects</p>
+                <p>Full Stack Projects & Digital Marketing Projects</p>
               </div>
             </div>
           </div>

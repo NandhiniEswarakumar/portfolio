@@ -14,9 +14,16 @@ const About = () => {
         <h2 className="section-title">About Me</h2>
         <div className="about-content">
           <div className="about-text">
-            <p className="lead">Hello! I'm Nandhini Eswarakumar, a passionate Frontend Developer and Digital Marketing Enthusiast.</p>
-            <p>I specialize in creating responsive, user-friendly web applications and implementing data-driven digital marketing strategies. With expertise in modern web technologies and digital marketing tools, I bridge the gap between technical implementation and business growth.</p>
-            <p>My dual expertise allows me to not only build stunning websites but also ensure they reach and engage the right audience through effective digital marketing campaigns.</p>
+            <p className="lead">I'm a Full Stack Developer and Digital Marketing Enthusiast passionate about building responsive web applications and growth-focused digital solutions.</p>
+            <p>I specialize in:</p>
+            <ul>
+              <li>React.js &amp; Modern Frontend Development</li>
+              <li>SEO &amp; Website Optimization</li>
+              <li>MERN Stack Projects</li>
+    
+              <li>Analytics &amp; Performance Tracking</li>
+            </ul>
+            <p>I enjoy combining technical development with strategic marketing to create impactful user experiences and business-driven solutions.</p>
 
                        {/* Education Section */}
             <div className="education-section">

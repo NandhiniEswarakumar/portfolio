@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import travelBlogImg from '../screenshots/travelblog.png';
 import startupMarketingImg from '../screenshots/startupmarketing.png';
 import boatSeoImg from '../screenshots/boatseo.png';
@@ -48,7 +49,15 @@ const MarketingProjects = () => {
         <p className="section-subtitle">SEO optimization, content marketing, and strategic campaigns</p>
         <div className="projects-grid">
           {projects.map((project, index) => (
-            <div className={`project-card marketing ${project.featured ? 'featured' : ''}`} key={index}>
+            <motion.div
+              className={`project-card marketing ${project.featured ? 'featured' : ''}`}
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.55, delay: index * 0.06, ease: 'easeOut' }}
+              whileHover={{ y: -12, scale: 1.015 }}
+            >
               <div className="project-image marketing-bg">
                 <img src={project.screenshot} alt={project.title} className="project-screenshot" />
                 <div className="project-overlay">
@@ -72,7 +81,7 @@ const MarketingProjects = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

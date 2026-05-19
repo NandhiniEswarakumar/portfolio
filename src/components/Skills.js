@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 
 const Skills = () => {
   const skillsRef = useRef(null);
@@ -36,7 +37,10 @@ const Skills = () => {
     { name: 'HTML5', icon: 'fab fa-html5', progress: 90 },
     { name: 'CSS3', icon: 'fab fa-css3-alt', progress: 85 },
     { name: 'JavaScript', icon: 'fab fa-js', progress: 80 },
-    { name: 'React', icon: 'fab fa-react', progress: 85 }
+    { name: 'React', icon: 'fab fa-react', progress: 85 },
+    { name: 'Node', icon: 'fab fa-node-js', progress: 80 },
+    { name: 'Express', icon: 'fas fa-server', progress: 78 },
+    { name: 'MongoDB', icon: 'fas fa-server', progress: 60 }
   ];
 
   const marketingSkills = [
@@ -68,10 +72,17 @@ const Skills = () => {
         <h2 className="section-title">Skills & Expertise</h2>
         <div className="skills-grid">
           {/* Frontend Development */}
-          <div className="skill-category">
+          <motion.div
+            className="skill-category"
+            initial={{ opacity: 0, y: 28 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.55, delay: 0.05, ease: 'easeOut' }}
+            whileHover={{ y: -10, scale: 1.01 }}
+          >
             <div className="category-header">
               <i className="fas fa-code"></i>
-              <h3>Frontend Development</h3>
+              <h3>Teck Stack</h3>
             </div>
             <div className="skill-items">
               {frontendSkills.map((skill, index) => (
@@ -88,10 +99,17 @@ const Skills = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* Digital Marketing */}
-          <div className="skill-category">
+          <motion.div
+            className="skill-category"
+            initial={{ opacity: 0, y: 28 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.55, delay: 0.12, ease: 'easeOut' }}
+            whileHover={{ y: -10, scale: 1.01 }}
+          >
             <div className="category-header">
               <i className="fas fa-chart-line"></i>
               <h3>Digital Marketing</h3>
@@ -111,10 +129,17 @@ const Skills = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* Soft Skills */}
-          <div className="skill-category">
+          <motion.div
+            className="skill-category"
+            initial={{ opacity: 0, y: 28 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.55, delay: 0.18, ease: 'easeOut' }}
+            whileHover={{ y: -10, scale: 1.01 }}
+          >
             <div className="category-header">
               <i className="fas fa-lightbulb"></i>
               <h3>Soft Skills</h3>
@@ -134,7 +159,7 @@ const Skills = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

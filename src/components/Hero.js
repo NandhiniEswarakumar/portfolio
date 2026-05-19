@@ -1,5 +1,8 @@
 import React from 'react';
 
+import techCv from '../assests/Nandhini E_FullStack.pdf';
+import marketingCv from '../assests/Nandhini E_Digital Marketing Intern.pdf';
+
 const Hero = () => {
   return (
     <section id="home" className="hero">
@@ -29,15 +32,18 @@ const Hero = () => {
           </div>
           
           <h1 className="glitch" data-text="Nandhini Eswarakumar">Nandhini Eswarakumar</h1>
-          <h2 className="typewriter"> Web Developer & Digital Marketing Enthusiast</h2>
+          <h2 className="typewriter"> Frontend Developer | MERN Stack Enthusiast | Digital Marketing Professional </h2>
           <p className="hero-description">Crafting beautiful web experiences and driving digital growth through strategic marketing</p>
-          
+            
           <div className="hero-buttons">
-            <a href="#frontend-projects" className="btn btn-primary">
-              <i className="fas fa-arrow-right"></i> View Projects
+            <a href={techCv} className="btn btn-primary" download="Nandhini-Eswarakumar-Tech-CV.pdf">
+              <i className="fas fa-download"></i> Tech CV
             </a>
-            <a href="#contact" className="btn btn-secondary">
-              <i className="fas fa-arrow-down"></i> Get In Touch
+            <a href={marketingCv} className="btn btn-secondary" download="Nandhini-Eswarakumar-Marketing-CV.pdf">
+              <i className="fas fa-chart-line"></i> Marketing CV
+            </a>
+            <a href="#frontend-projects" className="btn btn-secondary">
+              <i className="fas fa-arrow-right"></i> View Projects
             </a>
           </div>
           

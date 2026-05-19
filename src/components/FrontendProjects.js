@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import podhidaiImg from '../screenshots/resort.png';
 import mmtImg from '../screenshots/mmt.png';
 import textileImg from '../screenshots/textile.png';
@@ -55,7 +56,7 @@ const FrontendProjects = () => {
     },
     {
       title: 'Campus Portal',
-      description: 'A full-stack campus placement portal with integrated backend and MongoDB Atlas database for managing student placements and company interactions.',
+      description: 'Developed a full-stack campus placement portal with role-based authentication, resume management, and placement tracking for students and recruiters.',
       tech: ['React', 'Node.js', 'MongoDB Atlas', 'Express'],
       link: 'https://campus-placement-tau.vercel.app/',
       featured: true,
@@ -78,7 +79,15 @@ const FrontendProjects = () => {
         <p className="section-subtitle">Responsive web applications built with modern technologies</p>
         <div className="projects-grid">
           {projects.map((project, index) => (
-            <div className={`project-card ${project.featured ? 'featured' : ''}`} key={index}>
+            <motion.div
+              className={`project-card ${project.featured ? 'featured' : ''}`}
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.18 }}
+              transition={{ duration: 0.55, delay: index * 0.05, ease: 'easeOut' }}
+              whileHover={{ y: -12, scale: 1.015 }}
+            >
               <div className="project-image">
                 {project.screenshot ? (
                   <img src={project.screenshot} alt={project.title} className="project-screenshot" />
@@ -109,7 +118,7 @@ const FrontendProjects = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
